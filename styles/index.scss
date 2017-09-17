@@ -14,9 +14,36 @@ $body-color: #9b4143;
 
 @import "~bootstrap/scss/bootstrap";
 
+a {
+  color: $body-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: darken($body-color, 20%);
+  }
+
+  &.disabled {
+    cursor: default;
+    text-decoration: none !important;
+
+    &:hover {
+      color: inherit !important;
+    }
+  }
+}
+
 .block-inverse {
   background-color: $body-color;
   color: $body-bg;
+
+  a {
+    color: $body-bg;
+    text-decoration: underline;
+
+    &:hover {
+      color: lighten($body-bg, 20%);
+    }
+  }
 }
 
 .hero {
@@ -26,6 +53,42 @@ $body-color: #9b4143;
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  .menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+
+    li {
+      display: inline-block;
+
+      a {
+        background-color: darken($body-color, 20%);
+        border-radius: 10px;
+        // box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, .41);
+        padding: 1rem 2rem;
+        text-decoration: none;
+
+        &.disabled {
+          &:hover {
+            background-color: darken($body-color, 20%);
+          }
+        }
+
+        &:hover {
+          background-color: darken($body-color, 25%);
+        }
+      }
+    }
+
+    li + li {
+      margin-left: 2rem;
+    }
+  }
 }
 
 .sponsors {
@@ -48,15 +111,6 @@ h2 {
   border-radius: 5px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-a {
-  color: $body-color;
-  text-decoration: underline;
-
-  &:hover {
-    color: darken($body-color, 20%);
-  }
 }
 
 .schedule {
