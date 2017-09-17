@@ -25,3 +25,11 @@ NODE_ENV=production npm run build
 ```
 
 Output is in `build-production/`
+
+## Deployment
+
+To deploy on Github Pages:
+
+```bash
+npm deploy
+```
