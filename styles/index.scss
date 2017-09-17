@@ -58,50 +58,46 @@ a {
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     font-weight: 600;
     justify-content: center;
     margin-top: 3rem;
     width: 100%;
 
-    li {
-      display: inline-block;
+    a {
+      background-color: darken($body-color, 20%);
+      border-radius: 10px;
+      // box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, .41);
+      padding: .5rem 1rem;
+      margin: .5rem;
+      text-decoration: none;
+      white-space: nowrap;
 
-      a {
-        background-color: darken($body-color, 20%);
-        border-radius: 10px;
-        // box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, .41);
+      @include media-breakpoint-up(md) {
         padding: 1rem 2rem;
-        text-decoration: none;
-        white-space: nowrap;
+      }
 
-        &.disabled {
-          &:hover {
-            background-color: darken($body-color, 20%);
-          }
-        }
-
+      &.disabled {
         &:hover {
-          background-color: darken($body-color, 25%);
+          background-color: darken($body-color, 20%);
         }
       }
-    }
 
-    li + li {
-      margin-left: 2rem;
+      &:hover {
+        background-color: darken($body-color, 25%);
+      }
     }
   }
 }
 
 .sponsors {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 
   a {
+    display: inline-block;
     text-decoration: none;
-  }
-
-  a + a {
-    margin-left: 3rem;
+    margin: 1rem;
   }
 }
 
