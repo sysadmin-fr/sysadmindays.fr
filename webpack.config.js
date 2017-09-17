@@ -73,7 +73,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: 'index.html',
     }),
-    new webpack.EnvironmentPlugin(['NODE_ENV'])
+    new webpack.EnvironmentPlugin({ 'NODE_ENV': 'development' })
   ],
 
   resolve: {

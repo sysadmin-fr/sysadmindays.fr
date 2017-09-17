@@ -27,7 +27,7 @@
     "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "devserver": "webpack-dev-server",
+    "devserver": "webpack-dev-server --hot",
     "build": "webpack --progress",
     "deploy": "NODE_ENV=production webpack --progress && gh-pages -d build-production -a"
   }
