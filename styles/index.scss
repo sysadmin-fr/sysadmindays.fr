@@ -72,6 +72,7 @@ a {
         // box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, .41);
         padding: 1rem 2rem;
         text-decoration: none;
+        white-space: nowrap;
 
         &.disabled {
           &:hover {
@@ -167,6 +168,44 @@ h2 {
         color: lighten($body-color, 20%);
         &:before {
           content: '—';
+        }
+      }
+    }
+
+    .synopsis {
+      color: #725f64;
+      cursor: pointer;
+      font-size: .9em;
+      max-height: 3rem;
+      overflow: hidden;
+      position: relative;
+
+      p {
+        margin-bottom: .1rem;
+      }
+
+      ul {
+        padding-left: 30px;
+      }
+
+      &::after {
+        content: '';
+        background: linear-gradient(to bottom, transparentize($body-bg, 1) 0%, transparentize($body-bg, 0) 100%);
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        opacity: 1;
+        right: 0;
+        transition: opacity .5s;
+        z-index: 1;
+      }
+
+      &.show {
+        max-height: none;
+
+        &::after {
+          opacity: 0;
         }
       }
     }
