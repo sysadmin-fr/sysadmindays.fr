@@ -31,5 +31,5 @@ Output is in `build-production/`
 To deploy on Github Pages:
 
 ```bash
-npm deploy
+npm run deploy
 ```
