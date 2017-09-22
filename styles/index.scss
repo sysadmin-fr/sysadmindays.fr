@@ -13,6 +13,7 @@ $body-bg: #eae9e6;
 $body-color: #9b4143;
 
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 a {
   color: $body-color;
@@ -53,6 +54,45 @@ a {
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.7rem;
+    white-space: nowrap;
+
+    .muted {
+      opacity: .3;
+    }
+
+    &::after {
+      animation: blink 1s step-end 3;
+      background-color: transparentize($body-bg, .7);
+      content: '';
+      display: inline-block;
+      height: 1.3rem;
+      width: .6rem;
+      position: relative;
+      bottom: -.1rem;
+
+      @keyframes "blink" {
+        from, to {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+
+      &::after {
+        height: 2.3rem;
+        width: 1rem;
+      }
+    }
+  }
 
   .menu {
     align-items: center;
