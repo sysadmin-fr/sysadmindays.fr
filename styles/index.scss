@@ -31,6 +31,10 @@ a {
       color: inherit !important;
     }
   }
+
+  &.twitter {
+    text-decoration: none !important;
+  }
 }
 
 .block-inverse {
@@ -242,6 +246,7 @@ h2 {
 
         &::after {
           opacity: 0;
+          pointer-events: none;
         }
       }
     }

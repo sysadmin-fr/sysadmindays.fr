@@ -7,10 +7,15 @@ if (process.env.NODE_ENV != "production") {
 import $ from 'jquery';
 
 $().ready(function() {
-  $('.synopsis').each(function(i, e) {
-    var el = $(e);
-    el.on('click', function() {
+  $('.synopsis a').each(function(i, el) {
+    $(el).click(function(e) {
+      e.stopPropagation();
+    });
+  });
+
+  $('.synopsis').each(function(i, el) {
+    $(el).click(function(e) {
       $(this).toggleClass("show");
-    })
+    });
   });
 })
