@@ -17,15 +17,10 @@
               19 - 20 octobre 2017 <br>
               Paris
               <br>
-              <a href="https://twitter.com/sysadmindays" class="twitter">
-                <img src="img/twitter-logo.svg" width=40 height=40 alt="Twitter" rel="me">
+              <a href="https://twitter.com/sysadmindays" class="twitter" rel="me">
+                <span class="fa fa-twitter"></span>
                 @sysadmindays
               </a>
-            </div>
-
-            <div class="menu">
-              <a href="#programme">Programme</a>
-              <a href="#infos-pratiques">Informations pratiques</a>
             </div>
           </div>
         </div>
@@ -43,20 +38,34 @@
       </div>
       <div class="container">
         <div class="row justify-content-center">
+          <div class="col-lg-8 photos">
+            <a href="https://www.talegraph.com/tales/i4xIoHvIex">
+              <img src="img/bandeau-photos.jpg" alt="Les Photos">
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="schedule" id="programme">
-              <h2>Programme</h2>
+              <h2>Présentations</h2>
               <div class="schedule-day">
                 <h3>Jeudi 19 octobre</h3>
-                <dl>
-                  <dt>9h - 9h45</dt>
-                  <dd>Petit-déjeuner - Accueil</dd>
+                <div>
+                  <div class="presentation">
+                    <h4>Mot de bienvenue</h4>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=xufa0Yh9gl8">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>9h45 - 10h</dt>
-                  <dd>Mot de bienvenue</dd>
-
-                  <dt>10h - 11h</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>Les containers, décryptage</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -74,10 +83,25 @@
                         Présentation rapide de cette technologie vue par un œil de sysadmin, et un petit guide pour ne pas s'y perdre.
                       </p>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=z_MX9Z1ISeg">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://speakerdeck.com/renchap/les-containers-decryptage">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>11h - 12h</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>CI/CD avec Jenkins et Docker chez Alkemics</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -87,24 +111,26 @@
                         <a href="https://www.alkemics.com">Alkemics</a>
                       </span>
                     </div>
-                  </dd>
-
-                  <dt>12h - 13h30</dt>
-                  <dd class="pause">Pause déjeuner</dd>
-
-                  <dt>13h30 - 14h30</dt>
-                  <dd>
-                    <h4>Mesos, Marathon et Chronos</h4>
-                    <div class="speaker">
-                      <span class="speaker-name">
-                        Bruno Bonfils
-                      </span>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=Ij27TunlNqY">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://speakerdeck.com/renchap/alkemics-ci-and-cd-with-jenkins-and-docker">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                  </dd>
+                  </div>
 
-                  <dt>14h30 - 15h30</dt>
-                  <dd>
-                    <h4>Présentation de Kubernetes</h4>
+                  <div class="presentation">
+                    <h4>Introduction à Kubernetes</h4>
                     <div class="speaker">
                       <span class="speaker-name">
                         <a href="https://twitter.com/renchap">Renaud Chaput</a>
@@ -115,16 +141,28 @@
                     </div>
                     <div class="synopsis">
                       <p>
-                        Introduction à Kubernetes : de l'historique à l'architecture technique, tout pour avoir une première compréhension de cet orchestrateur et pouvoir ensuite approfondir.
+                        De l'historique à l'architecture technique, tout pour avoir une première compréhension de cet orchestrateur et pouvoir ensuite approfondir.
                       </p>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=Ompowc9pkBw">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://speakerdeck.com/renchap/introduction-a-kubernetes">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>15h30 - 15h45</dt>
-                  <dd class="pause">Pause</dd>
-
-                  <dt>15h45 - 16h45</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>Kubernetes en production : un an après</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -134,21 +172,29 @@
                         <a href="https://www.tf1.fr">eTF1</a>
                       </span>
                     </div>
-                  </dd>
-                  <dt>17h - 19h</dt>
-                  <dd>
-                    <h4>Apéritif</h4>
-                  </dd>
-                </dl>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=A_hAH_yXS2w">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://speakerdeck.com/renchap/kubernetes-en-production-un-an-apres">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="schedule-day">
                 <h3>Vendredi 20 octobre</h3>
-                <dl>
-                  <dt>9h - 9h30</dt>
-                  <dd>Petit-déjeuner - Accueil</dd>
-
-                  <dt>9h30 - 10h30</dt>
-                  <dd>
+                <div>
+                  <div class="presentation">
                     <h4>Gérer de gros clusters MySQL / Galera</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -158,10 +204,25 @@
                         <a href="https://www.synthesio.com/">Synthesio</a>
                       </span>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=kaFYy4swf-E">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://slides.com/gestassy/mysql-synthesio#/">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>10h30 - 11h30</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>La gestion de la mémoire</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -189,7 +250,7 @@
                           de perturbations telluriques ?
                         </li>
                         <li>
-                          Pourquoi un passage de DDR3 a DDR4 a dégradé mes perfs ?
+                          Pourquoi un passage de divR3 a divR4 a dégradé mes perfs ?
                         </li>
                         <li>
                           Et pourquoi l'OOM Killer se trigger, alors que j'ai encore
@@ -207,20 +268,38 @@
                         Attention, le voyage sera intense !
                       </p>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=LKn3xg4pvYg">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>11h30 - 11h45</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>Conf éclair — LogHub : un formateur et routeur d'événements efficient</h4>
                     <div class="speaker">
                       <span class="speaker-name">
                         <a href="https://twitter.com/fbacchella">Fabrice Bacchella</a>
                       </span>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=qTWoqUG-dhs">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>11h45 - 12h</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>Conf éclair — Détection temps réel des piratages web en utilisant des sondes noyau linux</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -230,13 +309,25 @@
                         <a href="https://www.planet-work.com">Planet-Work / Serveurcom</a>
                       </span>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=ntpdJiLRxIg&t=25s">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://slides.com/fvanniere/sysadmin7#/">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>12h - 13h45</dt>
-                  <dd class="pause">Pause déjeuner</dd>
-
-                  <dt>13h45 - 14h45</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>La vie d'un événement journalisé chez Synthesio</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -255,10 +346,25 @@
                         d'une stack Logstash / Kafka / ES / Kibana / rsyslog à Hindsight / Kafka / ES / Kibana / rsyslog. Et au passage quelques croyances urbaines autour d'outils que tout le monde utilise depuis la nuit des temps, comme rsyslog.
                       </p>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=j31ShVYVJRo">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://slides.com/beorn__/life-of-an-event-log#/">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>14h45 - 15h45</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>Gérer et scaler de gros clusters Elasticsearch</h4>
                     <div class="speaker">
                       <span class="speaker-name">
@@ -292,39 +398,44 @@
                           </li>
                         </ul>
                     </div>
-                  </dd>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=zY5TQ6jc3zs">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.slideshare.net/fdevillamil/running-scaling-large-elasticsearch-clusters-81015284">
+                            <span class="fa fa-file"></span>
+                            Slides
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                  <dt>15h45 - 16h</dt>
-                  <dd class="pause">Pause</dd>
-
-                  <dt>16h - 16h45</dt>
-                  <dd>
+                  <div class="presentation">
                     <h4>Table ronde : devenir freelance ?</h4>
-                  </dd>
-                </dl>
+                    <div class="speaker">
+                      <span class="speaker-name">
+                        Jérôme Drouet, Pierre Freund &amp; Arnaud Launay
+                      </span>
+                    </div>
+                    <div class="slides">
+                      <ul>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=OAbbNZWGEtQ">
+                            <span class="fa fa-youtube-play"></span>
+                            Vidéo
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="infos" id="infos-pratiques">
-              <h2>Informations pratiques</h2>
-              <p class="lead">
-                La conférence est gratuite et ouverte à toute personne intéressée par l'administration système. L'inscription préalable est <strong>obligatoire</strong>. <br>
-                Les conférences seront diffusées en direct et les vidéos disponibles ensuite.
-              </p>
-              <p><strong>Lieu :</strong>
-                Les Sysadmin Days ont lieu dans les locaux de Mozilla France :
-                <address>
-                  16bis Boulevard Montmartre <br>
-                  75 009 Paris <br>
-                  <a href="https://maps.google.com/maps?q=16+Boulevard+Montmartre,+75009+Paris,+Île-de-France,+France&hl=en&ie=UTF8&ll=48.871871,2.341332&spn=0.003507,0.009645&oe=utf-8&client=firefox-beta&geocode=FcK56QId2rkjAA&hnear=16+Boulevard+Montmartre,+75009+Paris,+Île-de-France,+France&t=m&z=17">(voir sur Google Maps)</a>
-                </address>
-              </p>
-              <p>
-                <strong>Repas : </strong>
-                Un petit déjeuner sera servi sur place les deux jours, ainsi que des boissons et de quoi grignoter toute la journée. Les déjeuners ne sont pas prévus par l'organisation.
-              </p>
-              <p>
-                <strong>Contact : </strong>Pour toute question, <a href="mailto:contact@sysadmindays.fr">contactez-nous</a>
-              </p>
             </div>
           </div>
         </div>

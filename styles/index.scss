@@ -12,6 +12,9 @@ $theme-colors: (
 $body-bg: #eae9e6;
 $body-color: #9b4143;
 
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
+
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
@@ -34,6 +37,10 @@ a {
 
   &.twitter {
     text-decoration: none !important;
+
+    .fa {
+      font-size: 1.5em;
+    }
   }
 }
 
@@ -145,6 +152,13 @@ a {
   }
 }
 
+.photos {
+  img {
+    border: $body-color 3px solid;
+    max-width: 100%;
+  }
+}
+
 h2 {
   background: linear-gradient(to right, $body-color 30%, $body-bg 80%);
   color: $body-bg;
@@ -154,44 +168,21 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.schedule-day {
+  margin-bottom: 2rem;
+}
+
 .schedule {
   h2 {
     margin-bottom: 3rem;
   }
 
-  dl {
-    @include make-row();
-  }
-
-  dt {
-    @include make-col-ready();
-
+  .presentation {
     @include media-breakpoint-up(sm) {
-      @include make-col(3);
-      text-align: right;
+      margin-top: 2rem;
     }
 
-    @include make-col(12);
-
-    color: #725f64;
-    font-weight: normal;
-  }
-
-  dd {
-    @include make-col-ready();
-
-    @include media-breakpoint-up(sm) {
-      @include make-col(9);
-    }
-
-    @include make-col(12);
-  }
-
-  dt,
-  dd {
-    @include media-breakpoint-up(sm) {
-      margin-top: 1rem;
-    }
+    padding-left: 2rem;
 
     a {
       color: inherit;
@@ -248,6 +239,29 @@ h2 {
           opacity: 0;
           pointer-events: none;
         }
+      }
+    }
+
+    .slides {
+      font-size: .9rem;
+
+      a {
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+      }
+
+      li + li::before {
+        content: '—';
+        margin-left: .2em;
+        margin-right: .2em;
       }
     }
 
