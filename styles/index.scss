@@ -13,10 +13,10 @@ $body-bg: #eae9e6;
 $body-color: #9b4143;
 
 $fa-font-path: "~font-awesome/fonts";
-@import '~font-awesome/scss/font-awesome';
+@import "~font-awesome/scss/font-awesome";
 
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 a {
   color: $body-color;
@@ -67,26 +67,27 @@ a {
   padding-bottom: 3rem;
 
   h1 {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     font-size: 1.7rem;
     white-space: nowrap;
 
     .muted {
-      opacity: .3;
+      opacity: 0.3;
     }
 
     &::after {
       animation: blink 1s step-end 3;
-      background-color: transparentize($body-bg, .7);
-      content: '';
+      background-color: transparentize($body-bg, 0.7);
+      content: "";
       display: inline-block;
       height: 1.3rem;
-      width: .6rem;
+      width: 0.6rem;
       position: relative;
-      bottom: -.1rem;
+      bottom: -0.1rem;
 
       @keyframes "blink" {
-        from, to {
+        from,
+        to {
           opacity: 1;
         }
         50% {
@@ -119,8 +120,8 @@ a {
       background-color: darken($body-color, 20%);
       border-radius: 10px;
       // box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, .41);
-      padding: .5rem 1rem;
-      margin: .5rem;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
       text-decoration: none;
       white-space: nowrap;
 
@@ -193,12 +194,12 @@ h2 {
     }
 
     .speaker {
-      font-size: .9em;
+      font-size: 0.9em;
 
       .speaker-company {
         color: lighten($body-color, 20%);
         &:before {
-          content: '—';
+          content: "—";
         }
       }
     }
@@ -206,13 +207,13 @@ h2 {
     .synopsis {
       color: #725f64;
       cursor: pointer;
-      font-size: .9em;
+      font-size: 0.9em;
       max-height: 3rem;
       overflow: hidden;
       position: relative;
 
       p {
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
       }
 
       ul {
@@ -220,15 +221,19 @@ h2 {
       }
 
       &::after {
-        content: '';
-        background: linear-gradient(to bottom, transparentize($body-bg, 1) 0%, transparentize($body-bg, 0) 100%);
+        content: "";
+        background: linear-gradient(
+          to bottom,
+          transparentize($body-bg, 1) 0%,
+          transparentize($body-bg, 0) 100%
+        );
         position: absolute;
         bottom: 0;
         height: 100%;
         left: 0;
         opacity: 1;
         right: 0;
-        transition: opacity .5s;
+        transition: opacity 0.5s;
         z-index: 1;
       }
 
@@ -243,7 +248,7 @@ h2 {
     }
 
     .slides {
-      font-size: .9rem;
+      font-size: 0.9rem;
 
       a {
         text-decoration: none;
@@ -259,9 +264,9 @@ h2 {
       }
 
       li + li::before {
-        content: '—';
-        margin-left: .2em;
-        margin-right: .2em;
+        content: "—";
+        margin-left: 0.2em;
+        margin-right: 0.2em;
       }
     }
 
@@ -273,6 +278,6 @@ h2 {
   h4 {
     font-size: inherit;
     font-weight: 600;
-    margin-bottom: .1rem;
+    margin-bottom: 0.1rem;
   }
 }
