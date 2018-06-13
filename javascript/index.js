@@ -1,7 +1,8 @@
 require("../styles/index")
 
 if (process.env.NODE_ENV != "production") {
-  require("../index.html")
+  require("../html/7.html")
+  require("../html/index.html")
 }
 
 import $ from "jquery"

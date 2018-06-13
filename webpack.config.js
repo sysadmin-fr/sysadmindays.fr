@@ -54,11 +54,17 @@ const config = {
   output: {
     filename: isProduction ? "[name]-[hash].js" : "[name].js",
     path: path.join(__dirname, isProduction ? "build-production" : "build"),
+    publicPath: "/",
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "html/index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "html/7.html",
+      filename: "7/index.html",
     }),
     new webpack.EnvironmentPlugin({ NODE_ENV: "development" }),
   ],
