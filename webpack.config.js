@@ -77,7 +77,9 @@ const config = {
 
 if (isProduction) {
   config.plugins.push(
-    new ExtractTextPlugin("[name]-[contenthash].css"),
+    new MiniCssExtractPlugin({
+      filename: "[name]-[contenthash].css",
+    }),
     new CleanWebpackPlugin(["build-production"]),
     new UglifyJSPlugin({ sourceMap: false }),
   )
