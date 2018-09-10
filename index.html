@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Sysadmin Days #8</title>
-<link href="/app-762ba7a4a45fbc007713.css" rel="stylesheet"></head>
+<link href="/app-6d151ff8faa878062580.css" rel="stylesheet"></head>
 
 <body>
   <div class="block-inverse page-menu">
@@ -63,30 +63,326 @@
             <strong>l'administration système</strong>.</p>
           <p class="lead">Cette huitième édition aura lieu à Paris, les
             <strong>jeudi 18 et vendredi 19 Octobre 2018</strong>.</p>
-          <p class="lead">Le thème principal de cette année est
-            <strong>l'observabilité</strong> (métriques, logs, alertes, traces,…). Ces sujets, complexes et variés, sont présents
-            dans toutes les infrastructures, peu importe leur taille, et sont un sujet récurrent de discussions et d'interrogations.
-            De nombreux outils existent dans ces domaines mais savoir lesquels mettre en place ou lesquels sont adaptés à
-            son besoin est un exercice délicat dont les réponses sont en permanente évolution.</p>
-          <p class="lead">Ce thème n'est pas exclusif et d'autres sujets seront au programme… Plus d'infos prochainement !</p>
-          <h2>Appel à présentations</h2>
-          <p>Nous recherchons actuellement des volontaires pour effectuer des présentations. Comme indiqué ci&#8209;dessus,
-            cette année le thème principal est l'observabilité, mais les autres sujets sont également acceptés.</p>
-          <p>Deux formats sont disponibles :
-            <ul>
-              <li>Présentation longue (45 minutes + 5 minutes de questions)</li>
-              <li>Flash talk (10 minutes, sans questions)</li>
-            </ul>
+          <p class="lead">
+            Le thème principal de cette année est <strong>l'observabilité</strong> (métriques, logs, alertes, traces…).
+            Ces sujets, complexes et variés, sont présentsdans toutes les infrastructures, peu importe leur taille, et
+            sont un sujet récurrent de discussions et d'interrogations.
+            De nombreux outils existent dans ces domaines mais savoir lesquels mettre en place ou lesquels sont adaptés
+            à un besoin précis est un exercice délicat, dont les réponses sont en permanente évolution.
           </p>
 
-          <p> Si cela vous intéresse, c'est par ici :
-            <a href="https://goo.gl/forms/bcIHuRogydbsnqz22">Appel à présentations</a>
-          </p>
+          <div class="sponsors text-center">
+            <p>Nous remercions notre généreux sponsor</p>
+            <a href="https://www.mozilla.org/">
+              <img src="/logo-mozilla-0b6fd6704f8b6e7338c6212f6749d4bb.png" width="200" height="58" alt="Mozilla France">
+            </a>
+          </div>
+
+          <div class="schedule" id="programme">
+            <h2>Programme</h2>
+            <div class="schedule-day">
+              <h3>Jeudi 18 octobre</h3>
+              <div>
+                <div class="presentation">
+                  <div>9h - 9h45</div>
+                  <h4>Accueil</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>9h45 - 10h</div>
+                  <h4>Mot de bienvenue</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>10h - 11h</div>
+                  <h4>Prometheus, de la technique au business</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://roidelapluie.be/">Julien Pivotto</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://inuits.eu/">Inuits</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Prometheus est le logiciel open source de monitoring qui a le vent en
+                      poupe. Retour d'expérience sur l'outil, et pourquoi sa valeur va bien plus loin que la technique,
+                      avec une cadence infernale de métriques ingérées.
+                    </p>
+                    <p>
+                      Cette conférence démontrera que même un nombre réduit de métriques permet
+                      d'améliorer la stabilité et l'efficacité des équipes, mais également de
+                      rapprocher les différents métiers afin de mieux satisfaire les
+                      utilisateurs finaux.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>11h - 12h</div>
+                  <h4>Plomberie et ecosystème Prometheus suivi d'un retour d'expérience chez
+                    Synthesio</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://keybase.io/beorn">Aurélien Rougemont</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.synthesio.com/">Synthesio</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Un coup d'oeil sur le fonctionnement de Prometheus, sa
+                      philosophie, ses partis pris et ses implications. Suivi d'un tour
+                      rapide de la TSDB interne de prometheus, ainsi que d'un état des lieux des
+                      Long Term Storage disponibles.
+                      Pour finir, le classique retour d'experience du passage à Prometheus chez
+                      Synthesio.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>12h - 14h</div>
+                  <h4>Pause déjeuner</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>14h - 15h</div>
+                  <h4>Comment le CCIN2P3 exploite 1 milliard d'observables par jour</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/faxm0dem">Fabien Wernli</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://cc.in2p3.fr/">CC-IN2P3</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Au CC on traite beaucoup de données scientifiques (capacité : le tiers d'un exaoctet), surtout
+                      celles du LHC (grand collisionneur de particules du CERN). Le bruit opérationnel généré par nos
+                      deux datacenters (logs et métriques) nous donne du fil à retordre : que faire du milliard
+                      d'événements journaliers qui nous est si précieux pour prévenir les pannes, comprendres les
+                      crashs, voire détecter un début d'incendie? C'est ce que je vais essayer de vous relater lors de
+                      ce talk.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>15h - 16h</div>
+                  <h4>Monitoring sur le Cloud, problèmes et pistes de solution</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://blog.ricebowljr.cc/">Alexandre Kervadec</a>
+                    </span>
+                    et
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/damigoudidier">Didier Nandiegou</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://osones.com/">Osones</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Le monitoring par des outils comme Zabbix peut être à la fois très puissant mais peut aussi
+                      rapidement lever des faux positifs et nécessiter du développement sur de l'infrastructure
+                      éphémère comme le sont les infrastructures Cloud. Pour résoudre ces problématiques, des outils
+                      Open Source existent et permettent, lorsqu'ils sont combinés entre eux, de retrouver à peu près
+                      tout ce que l'on veut avec un détail assez précis.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>16h - 16h15</div>
+                  <h4>Pause</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>16h15 - 17h15</div>
+                  <h4>Table-ronde : micro-services versus monolithes</h4>
+                  <!-- <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/ut0mt8">Raphaël Mazellier</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://cc.in2p3.fr/">CC-IN2P3</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Au CC on traite beaucoup de données scientifiques (capacité : le tiers d'un exaoctet), surtout
+                      celles du LHC (grand collisionneur de particules du CERN). Le bruit opérationnel généré par nos
+                      deux datacenters (logs et métriques) nous donne du fil à retordre : que faire du milliard
+                      d'événements par jour qui nous est si précieux pour prévenir les pannes, comprendres les crashs,
+                      voire détecter un début d'incendie? C'est ce que je vais essayer de vous relater lors de ce talk.
+                    </p>
+                  </div> -->
+                </div>
+
+                <div class="presentation">
+                  <div>17h15 - 19h30</div>
+                  <h4>Apéritif et réseautage</h4>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-day">
+              <h3>Vendredi 19 octobre</h3>
+              <div>
+                <div class="presentation">
+                  <div>9h - 9h30</div>
+                  <h4>Accueil</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>9h30 - 10h30</div>
+                  <h4>Comprendre et configurer la stack réseau Linux</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/saruspete">Adrien Mahieux</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Le réseau sous Linux, ça fonctionne plutôt bien : on atteint de bonnes vitesses sans rien
+                      modifier, il y a plein de paramètres pour activer des fonctionnalités, les drivers sont
+                      disponibles nativement, il y a de la documentation sur le net... Mais pour les cas particuliers,
+                      des attaques, des optimisations... les choses se corsent ! Les tutoriaux ou bugs tickets
+                      proposent de modifier des sysctls, mais est-ce applicable pour notre cas ?
+                    </p>
+                    <p>
+                      Pour comprendre l'impact des paramètres et sysctls, retraçons la vie d'un paquet, de son signal
+                      électrique jusqu'à sa consommation par l'application, en passant par toute la stack kernel : les
+                      interruptions, NAPI, routing, filtering, forwarding, et surtout, comment monitorer et modifier
+                      les différentes étapes...
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>10h30 - 11h30</div>
+                  <h4>Le load-balancer : point stratégique pour la remontée d'informations</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/BaptisteAssmann">Baptiste Assmann</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.haproxy.com">HAProxy technologies</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Les load-balancers sont présents dans toutes les infra "modernes". Ce
+                      composant est devenu un outil indispensable à la scalabilité des
+                      applications.
+                    </p>
+                    <p>
+                      Certains, comme HAPRoxy, contiennent une mine d'or d'informations qui
+                      sont très utiles pour connaître la santé de l'infrastructure et des
+                      applications et pour investiguer lorsque des problèmes surviennent.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>11h30 - 12h</div>
+                  <h4>Flash talks</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>12h - 14h</div>
+                  <h4>Pause déjeuner</h4>
+                </div>
+
+                <div class="presentation">
+                  <div>14h - 15h</div>
+                  <h4>Autour des requêtes des TSDB</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://github.com/aurrelhebert">Aurélien Hébert</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.ovh.com/fr/data-platforms/metrics/">OVH</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Cela fait maintenant des années que des systèmes de stockage de métriques comme OpenTSDB ou
+                      Graphite existent. Au cours des dernières années, de nouveaux acteurs révolutionnent le stockage
+                      des séries temporelles avec les bases open-sources InfluxDB, Prometheus ou encore Warp10. Chaque
+                      base a ses forces et faiblesses, notamment au niveau de la scalabilité du système de stockage.
+                      Toutefois, elles ont toutes un système de requêtes différent. Certaines proposent des concepts
+                      simples quand d’autres semblent plus difficiles d’accès. Savoir comment accéder et analyser ces
+                      données est essentiel dans un projet de monitoring : et si on faisait un tour des méthodes
+                      existantes ?
+                    </p>
+                    <p>
+                      Installez-vous confortablement, notre tour peut commencer ! Comment fonctionne la récupération
+                      des données avec OpenTSDB ? Quelles sont les requêtes possibles ? Qu’apportent aujourd’hui
+                      InfluxDB/Prometheus au monitoring IT ? Comment lire PromQl/InfluxQl et quelles sont les surprises
+                      de ces langages ? Pourquoi Graphite est-il encore à la mode ? Autant de questions auxquelles nous
+                      proposerons nos réponses. L’objectif est de mieux comprendre les différences, les limites mais
+                      aussi les points communs existant entre les différents outils à partir du cas d’utilisation du
+                      monitoring IT.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>15h - 16h</div>
+                  <h4>Prevent business logic attacks using dynamic instrumentation</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/jbaviat">Jean-Baptiste Aviat</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.sqreen.io/">Sqreen</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      As application security practitioners, we know that the attacks representing the most significant
+                      business risk for our organizations are often attacks targeting sensitive business functions of
+                      our applications. Those go far beyond the OWASP Top 10 and make generic (existing?) security
+                      tools inefficient. We require very tailor-made solutions to cover our security needs.
+                    </p>
+                    <p>
+                      This talk will show how to create a security automation tool using dynamic instrumentation that
+                      helps to prevent business logic attacks. Sensors are added to the application source code,
+                      business events collected in an analysis engine and automated responses are pushed back to the
+                      application at runtime. The presented tool is based on open source libraries, and easily
+                      extensible and pluggable to analysis engines such as Kibana or Splunk.
+                    </p>
+                    <p>
+                      Dynamic instrumentation is a game changer because it allows security teams to add sensors
+                      remotely, in real time, without asking development teams to trigger a new build and a new deploy
+                      of their applications.
+                    </p>
+                    <p>
+                      The talk will include concrete business examples to help the audience apply this strategy. It
+                      will also give tips to navigate through the various teams (fraud, developers, product, …) that
+                      own a different piece of this security puzzle.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div>16h15 - 17h15</div>
+                  <h4>(à venir)</h4>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="infos" id="infos-pratiques">
             <h2>Informations pratiques</h2>
             <p>
-              La conférence est gratuite et ouverte à toute personne intéressée par l'administration système. Une inscription préalable
+              La conférence est gratuite et ouverte à toute personne intéressée par l'administration système. Une
+              inscription préalable
               sera
               <strong>obligatoire</strong>.
               <br> Les conférences seront diffusées en direct et les vidéos disponibles ensuite.
@@ -98,14 +394,16 @@
                 16bis Boulevard Montmartre
                 <br> 75 009 Paris
                 <br>
-                <a href="https://maps.google.com/maps?q=16+Boulevard+Montmartre,+75009+Paris,+Île-de-France,+France&hl=en&ie=UTF8&ll=48.871871,2.341332&spn=0.003507,0.009645&oe=utf-8&client=firefox-beta&geocode=FcK56QId2rkjAA&hnear=16+Boulevard+Montmartre,+75009+Paris,+Île-de-France,+France&t=m&z=17">(voir sur Google Maps)</a>
+                <a href="https://maps.google.com/maps?q=16+Boulevard+Montmartre,+75009+Paris,+Île-de-France,+France&hl=en&ie=UTF8&ll=48.871871,2.341332&spn=0.003507,0.009645&oe=utf-8&client=firefox-beta&geocode=FcK56QId2rkjAA&hnear=16+Boulevard+Montmartre,+75009+Paris,+Île-de-France,+France&t=m&z=17">(voir
+                  sur Google Maps)</a>
               </address>
             </p>
-            <p>
+            <!-- <p>
               <strong>Repas : </strong>
-              Un petit déjeuner sera servi sur place les deux jours, ainsi que des boissons et de quoi grignoter toute la journée. Les
+              Un petit déjeuner sera servi sur place les deux jours, ainsi que des boissons et de quoi grignoter toute
+              la journée. Les
               déjeuners ne sont pas prévus par l'organisation.
-            </p>
+            </p> -->
             <p>
               <strong>Contact : </strong>Pour toute question,
               <a href="mailto:contact@sysadmindays.fr">contactez-nous</a>
@@ -115,6 +413,6 @@
       </div>
     </div>
   </div>
-<script type="text/javascript" src="/app-d1df6ff18e60b333aa64.js"></script></body>
+<script type="text/javascript" src="/app-e170086045c33a782aba.js"></script></body>
 
 </html>
