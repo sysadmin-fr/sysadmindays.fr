@@ -2,6 +2,7 @@ require("../styles/index")
 
 if (process.env.NODE_ENV != "production") {
   require("../html/7.html")
+  require("../html/sponsoring.html")
   require("../html/index.html")
 }
 

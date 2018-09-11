@@ -66,6 +66,10 @@ const config = {
       template: "html/7.html",
       filename: "7/index.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "html/sponsoring.html",
+      filename: "sponsoring/index.html",
+    }),
     new webpack.EnvironmentPlugin({ NODE_ENV: "development" }),
   ],
 

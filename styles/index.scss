@@ -18,6 +18,10 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
+body {
+  padding-bottom: 2rem;
+}
+
 a {
   color: $body-color;
   text-decoration: underline;
@@ -259,6 +263,11 @@ h2 {
     }
 
     padding-left: 2rem;
+
+    .hour {
+      margin-left: -2rem;
+      margin-bottom: 0.5rem;
+    }
 
     a {
       color: inherit;
