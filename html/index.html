@@ -193,26 +193,40 @@
 
                 <div class="presentation">
                   <div class="hour">15h - 16h</div>
-                  <h4>Monitoring sur le Cloud, problèmes et pistes de solution</h4>
+                  <h4>Prevent business logic attacks using dynamic instrumentation</h4>
                   <div class="speaker">
                     <span class="speaker-name">
-                      <a href="https://blog.ricebowljr.cc/">Alexandre Kervadec</a>
-                    </span>
-                    et
-                    <span class="speaker-name">
-                      <a href="https://twitter.com/damigoudidier">Didier Nandiegou</a>
+                      <a href="https://twitter.com/jbaviat">Jean-Baptiste Aviat</a>
                     </span>
                     <span class="speaker-company">
-                      <a href="https://osones.com/">Osones</a>
+                      <a href="https://www.sqreen.io/">Sqreen</a>
                     </span>
                   </div>
                   <div class="synopsis">
                     <p>
-                      Le monitoring par des outils comme Zabbix peut être à la fois très puissant mais peut aussi
-                      rapidement lever des faux positifs et nécessiter du développement sur de l'infrastructure
-                      éphémère comme le sont les infrastructures Cloud. Pour résoudre ces problématiques, des outils
-                      Open Source existent et permettent, lorsqu'ils sont combinés entre eux, de retrouver à peu près
-                      tout ce que l'on veut avec un détail assez précis.
+                      As application security practitioners, we know that the attacks representing the most
+                      significant
+                      business risk for our organizations are often attacks targeting sensitive business functions of
+                      our applications. Those go far beyond the OWASP Top 10 and make generic (existing?) security
+                      tools inefficient. We require very tailor-made solutions to cover our security needs.
+                    </p>
+                    <p>
+                      This talk will show how to create a security automation tool using dynamic instrumentation that
+                      helps to prevent business logic attacks. Sensors are added to the application source code,
+                      business events collected in an analysis engine and automated responses are pushed back to the
+                      application at runtime. The presented tool is based on open source libraries, and easily
+                      extensible and pluggable to analysis engines such as Kibana or Splunk.
+                    </p>
+                    <p>
+                      Dynamic instrumentation is a game changer because it allows security teams to add sensors
+                      remotely, in real time, without asking development teams to trigger a new build and a new
+                      deploy
+                      of their applications.
+                    </p>
+                    <p>
+                      The talk will include concrete business examples to help the audience apply this strategy. It
+                      will also give tips to navigate through the various teams (fraud, developers, product, …) that
+                      own a different piece of this security puzzle.
                     </p>
                   </div>
                 </div>
@@ -349,7 +363,7 @@
                   <h4>Flash talk : L'infrastructure As Code au grand complet avec Ansible, Terraform et Packer</h4>
                   <div class="speaker">
                     <span class="speaker-name">
-                      <a href="https://github.com/dupgit">Benoit Petit</a>
+                      <a href="https://twitter.com/bpetit_">Benoit Petit</a>
                     </span>
                     <span class="speaker-company">
                       <a href="https://www.wescale.fr/">WeScale</a>
@@ -361,10 +375,9 @@
                       de
                       l'état de son infrastructure, avec historique des changements. Cette présentation tentera de
                       donner un aperçu clair des capacités de trois outils, parmi les nombreux existants dans ce
-                      domaine: Ansible, Terraform et Packer. Nous montrerons également comment les faire fonctionner
-                      de
+                      domaine: Ansible, Terraform et Packer. Nous montrerons également comment les faire fonctionner de
                       concert de manière à disposer d'une solution complète et simple pour automatiser et gérer
-                      l'ensemble de son infrastructure.</p>
+                      l'ensemble de ses architectures, même lorsqu'elles sont réparties sur plusieurs plateformes.</p>
                   </div>
                 </div>
 
@@ -437,40 +450,26 @@
 
                 <div class="presentation">
                   <div class="hour">15h - 16h</div>
-                  <h4>Prevent business logic attacks using dynamic instrumentation</h4>
+                  <h4>Monitoring sur le Cloud, problèmes et pistes de solution</h4>
                   <div class="speaker">
                     <span class="speaker-name">
-                      <a href="https://twitter.com/jbaviat">Jean-Baptiste Aviat</a>
+                      <a href="https://blog.ricebowljr.cc/">Alexandre Kervadec</a>
+                    </span>
+                    et
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/damigoudidier">Didier Nandiegou</a>
                     </span>
                     <span class="speaker-company">
-                      <a href="https://www.sqreen.io/">Sqreen</a>
+                      <a href="https://osones.com/">Osones</a>
                     </span>
                   </div>
                   <div class="synopsis">
                     <p>
-                      As application security practitioners, we know that the attacks representing the most
-                      significant
-                      business risk for our organizations are often attacks targeting sensitive business functions of
-                      our applications. Those go far beyond the OWASP Top 10 and make generic (existing?) security
-                      tools inefficient. We require very tailor-made solutions to cover our security needs.
-                    </p>
-                    <p>
-                      This talk will show how to create a security automation tool using dynamic instrumentation that
-                      helps to prevent business logic attacks. Sensors are added to the application source code,
-                      business events collected in an analysis engine and automated responses are pushed back to the
-                      application at runtime. The presented tool is based on open source libraries, and easily
-                      extensible and pluggable to analysis engines such as Kibana or Splunk.
-                    </p>
-                    <p>
-                      Dynamic instrumentation is a game changer because it allows security teams to add sensors
-                      remotely, in real time, without asking development teams to trigger a new build and a new
-                      deploy
-                      of their applications.
-                    </p>
-                    <p>
-                      The talk will include concrete business examples to help the audience apply this strategy. It
-                      will also give tips to navigate through the various teams (fraud, developers, product, …) that
-                      own a different piece of this security puzzle.
+                      Le monitoring par des outils comme Zabbix peut être à la fois très puissant mais peut aussi
+                      rapidement lever des faux positifs et nécessiter du développement sur de l'infrastructure
+                      éphémère comme le sont les infrastructures Cloud. Pour résoudre ces problématiques, des outils
+                      Open Source existent et permettent, lorsqu'ils sont combinés entre eux, de retrouver à peu près
+                      tout ce que l'on veut avec un détail assez précis.
                     </p>
                   </div>
                 </div>
