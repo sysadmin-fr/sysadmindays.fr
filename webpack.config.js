@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const CleanWebpackPlugin = require("clean-webpack-plugin")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin")
 const webpack = require("webpack")
 const path = require("path")
@@ -87,7 +87,7 @@ if (isProduction) {
     new MiniCssExtractPlugin({
       filename: "[name]-[contenthash].css",
     }),
-    new CleanWebpackPlugin(["build-production"]),
+    new CleanWebpackPlugin(),
     new UglifyJSPlugin({ sourceMap: false }),
   )
 }

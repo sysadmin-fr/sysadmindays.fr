@@ -1,5 +1,5 @@
 {
-  "name": "sysadmin-7",
+  "name": "sysadmindays",
   "private": true,
   "browserslist": [
     "> 1%",
@@ -31,8 +31,7 @@
   },
   "scripts": {
     "devserver": "webpack-dev-server --hot",
-    "build": "webpack --progress",
-    "deploy": "NODE_ENV=production webpack-cli --progress && gh-pages -d build-production -a"
+    "build": "webpack"
   },
   "prettier": {
     "semi": false,
