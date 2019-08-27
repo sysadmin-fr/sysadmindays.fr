@@ -27,7 +27,6 @@ const config = {
           !isProduction ? "style-loader" : MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
-            options: { minimize: isProduction },
           },
           "postcss-loader",
           "sass-loader",
@@ -61,6 +60,10 @@ const config = {
     new HtmlWebpackPlugin({
       template: "html/index.html",
       filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "html/8.html",
+      filename: "8/index.html",
     }),
     new HtmlWebpackPlugin({
       template: "html/7.html",
