@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const CopyPlugin = require("copy-webpack-plugin")
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin")
 const webpack = require("webpack")
 const path = require("path")
@@ -35,6 +36,17 @@ const config = {
       {
         test: /\.html$/,
         use: ["html-loader"],
+      },
+      {
+        test: /\.(pdf)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
       },
       {
         test: /\.(jpg|jpeg|png|gif|svg|eot|ttf|woff|woff2)$/i,
@@ -74,6 +86,7 @@ const config = {
       filename: "sponsoring/index.html",
     }),
     new webpack.EnvironmentPlugin({ NODE_ENV: "development" }),
+    new CopyPlugin([{ from: "public" }]),
   ],
 
   resolve: {
