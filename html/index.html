@@ -73,22 +73,6 @@
             <strong>l'administration système</strong>.</p>
           <p class="lead">Cette neuvième édition aura lieu à Paris, les
             <strong>lundi 18 et mardi 19 Novembre 2019</strong>.</p>
-          <h2>Appel à présentations</h2>
-          <p>
-            <strong>Nous recherchons actuellement des oratrices et orateurs pour les SysadminDays</strong>.
-            La préférence va à des retours d'expérience concrets sur des sujets techniques, autour d'architectures de toute taille.
-          </p>
-          <p>Deux formats sont disponibles :
-            <ul>
-              <li>Présentation longue (45 minutes + 5 minutes de questions)</li>
-              <li>Flash talk (10 minutes, sans questions)</li>
-            </ul>
-          </p>
-
-          <p>Pour proposer un sujet, merci d'utiliser ce formulaire :
-            <a href="https://forms.gle/piTucroqPButm6og9"><strong>Appel à présentations</strong></a>
-          </p>
-          <p>La date limite pour proposer votre présentation est le <strong>Vendredi 4 Octobre</strong>.</p>
         </div>
         <div class="col-lg-12">
           <div class="sponsors text-center">
@@ -103,11 +87,326 @@
             </p>
           </div>
         </div>
+
+        <div class="col-lg-8">
+          <div class="schedule" id="programme">
+            <h2>Programme</h2>
+            <div class="schedule-day">
+              <h3>Lundi 18 Novembre</h3>
+              <div>
+                <div class="presentation">
+                  <div class="hour">9h - 9h30</div>
+                  <h4>Accueil</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">9h30 - 10h</div>
+                  <h4>Mot de bienvenue</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">10h - 11h</div>
+                  <h4>Incident Management and its applications to daily work</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/gestassy">Guillaume Estassy</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.synthesio.com/">Synthesio</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      La gestion d'incident est un moment très complexe et sous pression dans la vie d'un SRE, les gérer au mieux implique une organisation rigoureuse.
+                    </p>
+                    <p>
+                      Retours d'expériences concrets sur ce qu'on vit et ce qu'on a appris à Synthesio, et comment cette culture influence notre organisation du travail au jour le jour, et même intéresse toutes les entités de l'entreprise, y compris les non-techniques.
+                    </p>
+                    <p>
+                      Il sera question de gestion du temps, de la fatigue, de culture blameless, de priorisation des tâches, de postmortems…
+                    </p>
+                    <p>
+                      Le but est de proposer une conférence un peu alternative, non technique mais adressée à des ingénieurs / techniciens plutôt devops / SRE qui pourraient bénéficier de ces retours d'expérience dans leur gestion du quotidien.
+                    </p>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">11h - 12h</div>
+                  <h4>Kafka, a big Unix pipe (with a big buffer)</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                        <a href="https://github.com/ut0mt8">Raphael Mazelier</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://contentsquare.com">ContentSquare</a>
+                    </span>
+                  </div>
+                  <!-- <div class="synopsis"></div> -->
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">12h - 14h</div>
+                  <h4>Pause déjeuner</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">14h - 15h</div>
+                  <h4>Moving our legacy DNS stack to a cloud native, streaming based architecture</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                        Alessio Coltellacci et Laurent Doguin
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.clever-cloud.com/">Clever Cloud</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Immutable infrastructure provides more consistency, reliability in our infrastructure and simpler predictable deployment process. It’s the pattern of infrastructure provided by modern PAAS.
+                      However this paradigm often requires fast server provisioning in a cloud computing environment and to find solutions to handle ephemeral instances. They create changes in the network layer, which also means changes in the DNS configuration.
+                    </p>
+                    <p>
+                      This creates new expectations on DNS servers, and this can create a risk where no more services will be able to communicate through the network.
+                    </p>
+                    <p>
+                      Solutions like powerdns and bind don't provide this kind of architecture and they suffer from lack of redundancy, which transforms the DNS architecture in a single point of failure.
+                    </p>
+                    <p>
+                      In this talk I'll present stream-dns, a DNS server written in Go which is based on an Event Sourcing model, using Kafka/Pulsar as a Sink for the DNS configurations change events.
+                    </p>
+                    <ul>
+                      <li>
+                        How we avoid single point of failure thanks to our distributed architecture
+                      </li>
+                      <li>
+                        How event sourcing helps us to track/log DNS modifications in the system
+                      </li>
+                      <li>
+                        How DNS metrics produced by stream-dns improve the system’s observability
+                      </li>
+                      <li>
+                        How streaming makes propagation faster
+                      </li>
+                      <li>
+                        How it removes most caching issues
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">15h - 16h</div>
+                  <h4>Migrer 3 millions de sites sans maitriser leur code source ? Impossible mais vrai !</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/vcasse">Vincent Cassé</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.ovhcloud.com/fr/">OVHcloud</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Il y a deux ans, nous apprenions notre nouvelle mission : migrer les 3 millions de sites web hébergés dans notre datacentre de Paris. Sans en maitriser le code source, les migrer sans impact nous semblait totalement irréaliste.
+                    </p>
+                    <p>
+                      18 mois plus tard, c'est terminé ! Pour y arriver, nous avons du configurer des proxy SQL, des tunnels réseau, migrer des IP entre nos datacentres, livrer des milliers de serveurs, bosser durant des dizaines de nuits, mais aussi s'organiser entre plusieurs équipes qui n'ont pas l'habitude de travailler ensemble. Quels sont les soucis technique et humains que nous avons rencontrés, et comment les avons nous résolu ? Retour d'expérience sur l'une des plus grosse migration que le web ai connu !
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">16h - 16h15</div>
+                  <h4>Pause</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">16h15 - 17h15</div>
+                  <h4>Table-ronde : recrutement</h4>
+                  <!-- <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/renchap">Renaud Chaput</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.talegraph.com/">Talegraph</a>
+                    </span>
+                  </div> -->
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">17h15 - 19h30</div>
+                  <h4>Apéritif et réseautage</h4>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-day">
+              <h3>Mardi 19 Novembre</h3>
+              <div>
+                <div class="presentation">
+                  <div class="hour">9h - 9h30</div>
+                  <h4>Accueil</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">9h30 - 10h30</div>
+                  <h4>MyRocks, a RocksDB storage engine with MySQL</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/_skunnyk_">Romain "Skunnyk" Bouvier</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Retour d'experience sur la migration des clusters MySQL de "cold storage" de la plateforme Synthesio depuis InnoDB vers MyRocks.
+                    </p>
+                    <p>
+                      Ces clusters stockent les documents crawlés (tweet, facebook, instagram, reddit, forums, sites…), le tout pour environ ~60To de données.
+                    </p>
+                    <p>
+                      Qu'est ce que RocksDB, notre use-case et limitations, et pourquoi l'avoir choisi ?
+                    </p>
+                    <p>
+                      Plusieurs mois de tests, de fails, de migrations, aboutissant à environ 35% d'espace disque gagné, 30% de gain sur les read/writes, le tout (presque) sans changer une ligne de code de l'applicatif !
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">10h30 - 11h30</div>
+                  <h4>Kubernetes from scratch at Veepee</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      Loïc Blot
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.veepee.com">Veepee</a>
+                    </span>
+                  </div>
+                  <!-- <div class="synopsis">
+
+                  </div> -->
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">11h30 - 11h40</div>
+                  <h4>Flash talk : Du cloud en click-click à infrastructure as code sans tout casser (ou presque)</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/gduchaussois">Gaëtan Duchaussois</a>
+                    </span>
+                  </div>
+                  <!-- <div class="synopsis">
+                  </div> -->
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">11h40 - 11h50</div>
+                  <h4>Flash talk : Molecule, ou comment tester ses rôles Ansible</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/JqckB">Cyril Grosjean</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.wifirst.com/">Wifirst</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Ansible est un outil utilisé par de nombreuses entreprise pour gérer leurs configurations et leurs déploiements applicatifs mais comment nous assurer que ces déploiements sont bien réalisés sur les différents systèmes ? Cette présentation montrera Molecule, l'outil de test de playbook/rôle d'Ansible, permettant d'executer ses tests sur les différents providers qu'Ansible propose (Docker, OpenStack, Vagrant…).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">11h50 - 12h</div>
+                  <h4>Flash talk : Solutionner ses problématiques RGPD à grands coups de ZFS</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://twitter.com/enixsas">Alexandre Buisine</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://enix.io">Enix</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      D'un côté, la release de ZFS 0.8 apporte son lot de nouvelles fonctionnalités (encryption, device removal…), de l'autre il y a une grande tendance à mutualiser ses volumes sur des devices de plus en plus denses. Comment assurer une sécurité silotée des données sans rendre la maintenance inconfortable ? On vous parle de notre retour d'expérience !
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">12h - 14h</div>
+                  <h4>Pause déjeuner</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">14h - 15h</div>
+                  <h4>Déploiement et gestion du cycle de vie de micro-services sur Kubernetes avec un outil maison</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://github.com/aurrelhebert">Farzad Farid</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.kapten.com/">Kapten</a>
+                    </span>
+                  </div>
+                  <!-- <div class="synopsis">
+                  </div> -->
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">15h - 16h</div>
+                  <h4>1 sysadmin vs 250 clusters de stockage</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://www.linkedin.com/in/etienne-menguy-895a8515/">Etienne Menguy</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.ovhcloud.com/">OVHcloud</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      OVHcloud utilise Ceph depuis cinq ans pour certains de ses besoins de stockage, bien qu'étant composée de 2000 serveurs physiques et 20000 conteneurs, cette infrastructure est gérée au quotidien par une seule personne au RUN. Nous ferons une présentation et un retour d'expérience sur les différents moyens mis en oeuvre pour y arriver.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">16h - 16h15</div>
+                  <h4>Pause</h4>
+                </div>
+
+                <div class="presentation">
+                  <div class="hour">16h15 - 17h15</div>
+                  <h4>Testing in infrastructure</h4>
+                  <div class="speaker">
+                    <span class="speaker-name">
+                      <a href="https://www.rottenbytes.info/">Nicolas Szalai</a>
+                    </span>
+                    <span class="speaker-company">
+                      <a href="https://www.ledger.com/">Ledger</a>
+                    </span>
+                  </div>
+                  <div class="synopsis">
+                    <p>
+                      Les ops/l'infra/les SRE partagent beaucoup de pratiques avec les developeurs. On parle énormément d'agilité, de méthodologie mais assez peu de tests. Cette conférence propose de voir à la fois des retours d'expériences, des expérimentations et des sujets de recherche.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-8">
           <div class="newsletter" id="newsletter">
             <h2>Newsletter</h2>
             <p>
-              Afin de ne pas manquer les informations importantes sur les SysadminDays et être tenu au courant de l'ouverture des inscriptions, vous pouvez vous inscrire sur notre newsletter :
+              Afin de ne pas manquer les informations importantes sur les SysadminDays et être tenu au courant des annonces, vous pouvez vous inscrire à notre newsletter :
               <form action="https://gmail.us20.list-manage.com/subscribe/post?u=edf653be389cc8b511802fb09&amp;id=1dc3650a08" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" method="post" class="validate" target="_blank" novalidate>
                 <label>E-mail :
                   <input type="email" name="EMAIL" />
@@ -118,11 +417,12 @@
             </p>
           </div>
         </div>
+
         <div class="col-lg-8">
           <div class="infos" id="infos-pratiques">
             <h2>Informations pratiques</h2>
             <p>
-              La conférence est gratuite et ouverte à toute personne intéressée par l'administration système. Une inscription préalable sera <strong>obligatoire</strong>. Les inscriptions ouvriront début octobre, une fois le programme complet publié.
+              La conférence est gratuite et ouverte à toute personne intéressée par l'administration système. Une inscription préalable sera <strong>obligatoire</strong>.
               <br> Les conférences seront diffusées en direct et les vidéos disponibles sur le site par la suite.
             </p>
             <p>
